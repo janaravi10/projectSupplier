@@ -31,8 +31,8 @@ app.use("/product", productRoute);
 app.use("/supplier", supplierRoute);
 // //routes for uploading project
 // app.use("/project", projectRoute);// ... other app.use middleware
-app.use(express.static(path.join(__dirname, "client", "build")));
+app.use(express.static(path.join(__dirname, "public")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  res.sendFile(path.join(__dirname,"public", "index.html"));
 });
 app.listen(port, () => console.log("Server started on " + port));
