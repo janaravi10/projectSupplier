@@ -20,7 +20,6 @@ router.post("/add", function(req, res) {
 
   // deleteing unneccesary prop
   delete productSent._id;
-  console.log(productSent)
   if (productSent) {
     // get the product from request body
     if (productSent) {
@@ -99,7 +98,6 @@ router.post("/edit", function(req, res) {
       productSent,
       { new: true },
       function(err, updatedDoc) {
-        console.log("sendt");
         if (err) {
           console.log(err);
           res.send({
