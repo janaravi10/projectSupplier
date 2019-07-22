@@ -1,0 +1,23 @@
+PUT  http://localhost:5000/product/5d34997a8d7fd5461045ec0e
+
+{ "product":  {
+    "_id":"5d34997a8d7fd5461045ec0e",
+    "productName": "sdfasdfasdfadff",
+    "itemQty": 2,
+    "uom": "KG",
+    "packSize": 42,
+    "packUom": "LTR",
+    "unitPrice": 2322,
+    "totalPrice": 2322,
+    "dateField": "2019-07-26T05:08:31.702Z",
+    "comment": "sdfasdf",
+    "harmfulProd": true,
+    "supplierId": "5d2c6c42d1568805a8bfa1e0",
+    "__v": 0
+    }}
+
+# POST http://localhost:5000/supplier HTTP/1.1
+
+# {"supplier": {
+#    "poReference":"asdfadsf", "billOfEntryDate": 1563726222683, "transactionDate":1563726222683
+# }}
