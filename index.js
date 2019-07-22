@@ -7,7 +7,6 @@ require("./db_connection/db");
 const init = async () => {
   const server = Hapi.server({
     port: process.env.PORT || 5000,
-    host: "localhost",
     routes: {
       files: {
         relativeTo: Path.join(__dirname, "public")
