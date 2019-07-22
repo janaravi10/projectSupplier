@@ -4,7 +4,6 @@ const Hapi = require("@hapi/hapi"),
   productRoutes = require("./product/productRoute"),
   supplierRoutes = require("./supplier/supplierRoute");
 require("./db_connection/db");
-const cors = require("cors");
 const init = async () => {
   const server = Hapi.server({
     port: process.env.PORT || 5000,
